@@ -1,0 +1,237 @@
+-- Crear la base de datos test_db
+CREATE DATABASE IF NOT EXISTS test_db;
+
+-- Usar la base de datos test_db
+USE test_db;
+
+-- Crear la tabla usuario
+CREATE TABLE IF NOT EXISTS usuario (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    apellidos VARCHAR(50) NOT NULL,
+    nombres VARCHAR(50) NOT NULL,
+    usuario VARCHAR(50) NOT NULL,
+    clave VARCHAR(255) NOT NULL,
+    rol VARCHAR(50) NOT NULL
+);
+
+-- Insertar datos de prueba en la tabla usuario
+INSERT INTO usuario (apellidos, nombres, usuario, clave, rol)
+VALUES 
+    ('García', 'Juan', 'jgarcia', 'password123', 'admin'),
+    ('López', 'María', 'mlopez', 'password456', 'user'),
+    ('Pérez', 'Carlos', 'cperez', 'password789', 'guest');
+-- Tabla productos
+CREATE TABLE productos (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto A', 'Almacén 1', 'Marca A', '100', '1kg', 10.50, '2024-12-31', NULL),
+('Producto B', 'Almacén 1', 'Marca B', '200', '500g', 20.75, '2024-11-30', NULL),
+('Producto C', 'Almacén 1', 'Marca C', '50', '750g', 15.00, '2024-10-31', NULL);
+
+-- Tabla productos1
+CREATE TABLE productos1 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos1 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 1A', 'Almacén 1', 'Marca D', '30', '300g', 12.50, '2024-09-15', NULL),
+('Producto 1B', 'Almacén 1', 'Marca E', '150', '1.5kg', 25.00, '2024-08-25', NULL),
+('Producto 1C', 'Almacén 1', 'Marca F', '70', '700g', 17.75, '2024-07-10', NULL);
+
+-- Tabla productos2
+CREATE TABLE productos2 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos2 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 2A', 'Almacén 2', 'Marca G', '40', '400g', 11.00, '2024-10-10', NULL),
+('Producto 2B', 'Almacén 2', 'Marca H', '90', '900g', 18.50, '2024-09-20', NULL),
+('Producto 2C', 'Almacén 2', 'Marca I', '60', '600g', 16.25, '2024-11-05', NULL);
+
+-- Tabla productos3
+CREATE TABLE productos3 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos3 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 3A', 'Almacén 3', 'Marca J', '50', '500g', 13.50, '2024-11-10', NULL),
+('Producto 3B', 'Almacén 3', 'Marca K', '80', '1kg', 18.99, '2024-09-25', NULL),
+('Producto 3C', 'Almacén 3', 'Marca L', '30', '250g', 7.75, '2024-10-05', NULL);
+
+-- Tabla productos4
+CREATE TABLE productos4 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos4 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 4A', 'Almacén 4', 'Marca M', '60', '600g', 14.50, '2024-12-15', NULL),
+('Producto 4B', 'Almacén 4', 'Marca N', '90', '1.2kg', 19.99, '2024-11-20', NULL),
+('Producto 4C', 'Almacén 4', 'Marca O', '40', '300g', 8.25, '2024-08-30', NULL);
+
+-- Tabla productos5
+CREATE TABLE productos5 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos5 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 5A', 'Almacén 5', 'Marca P', '70', '700g', 15.75, '2024-10-15', NULL),
+('Producto 5B', 'Almacén 5', 'Marca Q', '100', '1.5kg', 21.50, '2024-12-05', NULL),
+('Producto 5C', 'Almacén 5', 'Marca R', '50', '350g', 9.50, '2024-07-20', NULL);
+
+-- Tabla productos6
+CREATE TABLE productos6 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos6 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 6A', 'Almacén 6', 'Marca S', '80', '800g', 16.50, '2024-09-10', NULL),
+('Producto 6B', 'Almacén 6', 'Marca T', '120', '2kg', 22.99, '2024-08-25', NULL),
+('Producto 6C', 'Almacén 6', 'Marca U', '60', '400g', 10.25, '2024-11-30', NULL);
+
+-- Tabla productos7
+CREATE TABLE productos7 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos7 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 7A', 'Almacén 7', 'Marca V', '90', '900g', 17.25, '2024-11-20', NULL),
+('Producto 7B', 'Almacén 7', 'Marca W', '130', '2.5kg', 24.75, '2024-10-15', NULL),
+('Producto 7C', 'Almacén 7', 'Marca X', '70', '450g', 11.00, '2024-12-10', NULL);
+
+-- Tabla productos8
+CREATE TABLE productos8 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos8 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 8A', 'Almacén 8', 'Marca Y', '100', '1kg', 18.50, '2024-08-10', NULL),
+('Producto 8B', 'Almacén 8', 'Marca Z', '140', '3kg', 26.99, '2024-09-05', NULL),
+('Producto 8C', 'Almacén 8', 'Marca AA', '80', '500g', 12.75, '2024-10-25', NULL);
+
+-- Tabla productos9
+CREATE TABLE productos9 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos9 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 9A', 'Almacén 9', 'Marca AB', '110', '1.1kg', 19.50, '2024-07-15', NULL),
+('Producto 9B', 'Almacén 9', 'Marca AC', '150', '3.5kg', 28.50, '2024-06-20', NULL),
+('Producto 9C', 'Almacén 9', 'Marca AD', '90', '550g', 13.50, '2024-05-10', NULL);
+
+-- Tabla productos10
+CREATE TABLE productos10 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos10 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 10A', 'Almacén 10', 'Marca AE', '120', '1.2kg', 20.75, '2024-10-10', NULL),
+('Producto 10B', 'Almacén 10', 'Marca AF', '160', '4kg', 30.99, '2024-08-20', NULL),
+('Producto 10C', 'Almacén 10', 'Marca AG', '100', '600g', 14.75, '2024-07-05', NULL);
+
+-- Tabla productos11
+CREATE TABLE productos11 (
+    idProductos INT AUTO_INCREMENT PRIMARY KEY,
+    nombreProducto VARCHAR(255) NOT NULL,
+    almacen VARCHAR(255),
+    marca VARCHAR(255),
+    stock VARCHAR(255),
+    peso VARCHAR(255),
+    precio FLOAT,
+    fechaCaducidad DATE,
+    img BLOB
+);
+
+INSERT INTO productos11 (nombreProducto, almacen, marca, stock, peso, precio, fechaCaducidad, img) VALUES
+('Producto 11A', 'Almacén 11', 'Marca AH', '130', '1.3kg', 22.00, '2024-09-05', NULL),
+('Producto 11B', 'Almacén 11', 'Marca AI', '170', '4.5kg', 32.50, '2024-06-15', NULL),
+('Producto 11C', 'Almacén 11', 'Marca AJ', '110', '650g', 15.50, '2024-05-20', NULL);
